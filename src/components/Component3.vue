@@ -6,20 +6,20 @@
 </template>
 
 <script>
-import store from "../main.js";
-import { ref } from "vue";
+import store from '../main.js'
+import { ref } from 'vue'
 
-const num = ref(0);
+const num = ref(0)
 
-function div2(event) {
-  store.dispatch("overTwo", { num });
+function div2 (event) {
+  store.dispatch('overTwo', { num })
 }
 
 export default {
-  data() {
-    return { div2, num };
+  data () {
+    return { div2, num }
   }
-};
+}
 </script>
 
 <style scoped></style>

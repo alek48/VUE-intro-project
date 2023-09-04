@@ -13,26 +13,26 @@ const store = new Vuex.Store({
     sum: 0
   },
   mutations: {
-    plusTwo (state,{num}) {
+    plusTwo (state, { num }) {
       state.sum = state.sum + parseFloat(num.value)
     },
-    timesTwo (state, {num}) {
+    timesTwo (state, { num }) {
       state.sum = state.sum * parseFloat(num.value)
     },
-    overTwo (state, {num}) {
+    overTwo (state, { num }) {
       state.sum = state.sum / parseFloat(num.value)
     }
 
   },
   actions: {
-    plusTwo (context, {num}) {
-      context.commit('plusTwo', {num})
+    plusTwo (context, { num }) {
+      context.commit('plusTwo', { num })
     },
-    timesTwo (context,{num}) {
-      context.commit('timesTwo', {num})
+    timesTwo (context, { num }) {
+      context.commit('timesTwo', { num })
     },
-    overTwo (context,{num}) {
-      context.commit('overTwo', {num})
+    overTwo (context, { num }) {
+      context.commit('overTwo', { num })
     }
   }
 })
